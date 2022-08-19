@@ -1,0 +1,521 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    background-color: white;
+    opacity: 0.9;
+    margin-top: -1.5rem;
+}
+
+nav {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header .nav-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 9rem;
+}
+
+.nav-menu ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    padding: 1.75rem 2rem;
+    padding-top: 2.5rem;
+}
+
+.nav-menu-list a {
+    text-decoration: none;
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    color: black;
+    padding: 3rem 1.5rem;
+}
+
+.nav-menu-list a:hover {
+    background-color: red;
+    color: white;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search {
+    display: flex;
+    border: 1px solid red;
+    background-color: red;
+    border-radius: 10px;
+    padding: 0.5rem 1.3rem;
+    color: white;
+    font-weight: bold;
+}
+
+.srch {
+    display: flex;
+    justify-content: right;
+}
+
+.shop-title {
+    margin-top: 6.6rem;
+    width: 100%;
+    background-color: rgb(44, 41, 41);
+    color: white;
+}
+
+.shop-title h2 {
+    font-size: 1.75rem;
+    padding-top: 2rem;
+    padding-left: 10rem;
+}
+
+.shop-title p {
+    padding-left: 10rem;
+    padding-bottom: 2rem;
+}
+
+.main-body {
+    display: flex;
+    width: 80%;
+    padding: 4rem 0;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    padding: 1.5rem 0;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.content-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25%;
+    margin: 0 auto;
+}
+
+.card-img img {
+    max-width: 100%;
+}
+
+.card-img {
+    overflow: hidden;
+}
+
+.card-content {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-price {
+    font-size: 1.5rem;
+    color: green;
+}
+
+.addtocart {
+    border: 4px solid rgb(201, 190, 190);
+    border-style: double;
+    padding: 0.15rem;
+    font-weight: 500;
+    font-size: 0.85rem;
+}
+
+.addtocart:hover {
+    border: 5px solid rgb(167, 5, 5);
+    border-style: double;
+    color: rgb(167, 5, 5);
+}
+
+aside h6 {
+    border-left: 5px solid rgb(241, 28, 28);
+    padding-left: 1rem;
+}
+
+.recent-details img {
+    width: 5.5rem;
+}
+
+.recent-info {
+    padding-left: 1.5rem;
+}
+
+.recent-details {
+    border-bottom: 1px solid rgb(243, 243, 247);
+    padding: 1rem;
+}
+
+.aside-body, .aside-body a {
+    font-size: 0.9rem;
+    color: rgb(44, 41, 41);
+    text-decoration: none;
+}
+
+.main-links-info ul {
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    padding-left: 1.3rem;
+}
+
+.main-links-info li {
+    padding: 0.3rem 0;
+    list-style-type: circle;
+}
+
+.main-links-info a {
+    text-decoration: none;
+    color: rgb(44, 41, 41);
+    transition: 0.5s linear;
+}
+
+.main-links-info li:hover, .main-links-info a:hover {
+    color: rgb(241, 28, 28);
+    padding-left: 0.6rem;
+    cursor: pointer;
+}
+
+.recent-details {
+    display: flex;
+    align-items: center;
+}
+
+main {
+    width: 65%;
+}
+
+aside {
+    width: 35%;
+}
+
+footer {
+    width: 100%;
+    background-color: rgb(44, 41, 41);
+}
+
+.footer-container {
+    color: white;
+    padding: 2rem 0;
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-info a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact-info {
+    line-height: 0.6rem;
+}
+
+.footer-container h6 {
+    border-left: 5px solid rgb(241, 28, 28);
+    padding-left: 1rem;
+}
+
+.contact-info img {
+    width: 3.5rem;
+}
+
+.contact-details, .recent-details {
+    display: flex;
+    align-items: center;
+}
+
+.info {
+    padding-left: 1.5rem;
+}
+
+.contact-body a:hover {
+    color: rgb(241, 28, 28);
+}
+
+.recent-details img {
+    width: 5.5rem;
+}
+
+.recent-info {
+    padding-left: 1.5rem;
+}
+
+.recent-details {
+    border-bottom: 1px solid white;
+    padding: 1rem;
+}
+
+.recent-body, .recent-body a {
+    font-size: 0.9rem;
+    color: white;
+    text-decoration: none;
+}
+
+.store-links-info ul {
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    padding-left: 1.3rem;
+}
+
+.store-links-info li {
+    padding: 0.3rem 0;
+    list-style-type: circle;
+}
+
+.store-links-info a {
+    text-decoration: none;
+    color: white;
+    transition: 0.5s linear;
+}
+
+.store-links-info li:hover, .store-links-info a:hover {
+    color: rgb(241, 28, 28);
+    padding-left: 0.6rem;
+    cursor: pointer;
+}
+
+.follow-details a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.follow-details ion-icon{
+    color: #fff;
+    font-size: 30px;
+    padding-left: 14px;
+    padding-top: 5px;
+    font-size: 30px;
+    transition: 0.5s ease;
+}
+
+.follow-details ion-icon:hover {
+    color: rgb(241, 28, 28);
+}
+
+.follow-details {
+    padding-top: 1.2rem;
+}
+
+.footer1, .footer2 {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer2 {
+    width: 40%;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 2.35rem;
+    right: 2rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20px;
+    height: 15px;
+}
+
+.toggle-button .bar {
+    height: 2px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+@media (max-width: 1150px) {
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer1, .footer2 {
+        width: 100%;
+    }
+
+    .footer2 {
+        margin-top: 4rem;
+    }
+
+    .contact-info, .recent-card, .store-links-info, .tags-follow-info {
+        width: 50%;
+    }
+
+    .main-card {
+        width: 90%;
+    }
+
+    .recent-details {
+        width: max-content;
+    }
+    nav {
+        width: 95%;
+    }
+}
+
+@media (max-width: 650px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    header .nav-items {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo img {
+        width: 7rem;
+        padding-left: 2rem;
+        padding-top: .75rem;
+        padding-bottom: .75rem;
+    }
+
+    .nav-menu ul {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        align-items: flex-start;
+        margin: 0 auto;
+    }
+    
+    .nav-menu-list a {
+        width: 100%;
+        padding: 0;
+        padding-right: 100%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    
+    .nav-menu-list {
+        width: 100%;
+    }
+
+    .nav-menu {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: left;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .nav-menu ul {
+        width: 100%;
+        padding: 0.5rem 0;
+    }
+
+    .srch1 .search {
+        display: none;
+    }
+
+    .menu-list {
+        width: 100%;
+    }
+    
+    .nav-menu-list li {
+        width: 100%;
+        padding: .6rem 2rem;
+        border-bottom: 1px rgb(243, 243, 247) solid;
+    }
+
+    .nav-menu-list li:hover, .nav-menu-list li a:hover {
+        background-color: rgb(243, 243, 247);
+        color: white;
+    }
+
+    .nav-menu-list {
+        display: none;
+    }
+
+    .nav-menu-list.active {
+        display: flex;
+    }
+    
+    header {
+        width: 100%;
+        margin: 0 auto;
+        position: none;
+        background-color: white;
+        margin-top: -1.5rem;
+        opacity: 1;
+        box-shadow: none;
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+        -o-box-shadow: none;
+    }
+
+    .footer1, .footer2 {
+        flex-direction: column;
+    }
+
+    .contact-info {
+        width: 100%;
+        padding: 2rem 0;
+    }
+
+    .footer-container {
+        width: 80%;
+    }
+
+    .tags-follow-info {
+        width: 100%;
+    }
+
+    .addtocart {
+        font-size: 0.75rem;
+    }
+
+    .shop-title h2, .shop-title p {
+        padding-left: 1.5rem;
+    }
+
+    .main-body {
+        flex-direction: column;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .content-card {
+        width: 70%;
+    }
+
+    .card-img {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}
