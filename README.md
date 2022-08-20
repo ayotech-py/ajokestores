@@ -1,6 +1,6 @@
 # AJOKE STORES
 
-## This is an complete clothing eccomerce store built from scratch using following technologies such as
+## This is a complete clothing eccomerce store built from scratch using following technologies such as
 
 ### FRONTEND
 - HTML
