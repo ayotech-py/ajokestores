@@ -117,7 +117,7 @@ header .nav-items {
 }
 
 .role1 {
-    background-image:url(img51.jpg);
+    background-image:url(./images/img51.jpg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -217,7 +217,7 @@ header .nav-items {
 }
 
 .role2 {
-    background-image:url(img1.jpg);
+    background-image:url(./images/img1.jpg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -574,7 +574,7 @@ footer {
     }
 
     .role1 {
-        background-image:url(img51.jpg);
+        background-image:url(./images/img51.jpg);
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -616,7 +616,7 @@ footer {
     }
 
     .role2 {
-        background-image:url(img3.jpg);
+        background-image:url(./images/img3.jpg);
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
