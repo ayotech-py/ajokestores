@@ -75,7 +75,7 @@ for (var a = 0; a < list_item.length; a++) {
     } else {
         console.log(a);
     }
-} */
+}*/
 
 function itemClick(click_id) {
     //orderbadge icon
@@ -87,7 +87,7 @@ function itemClick(click_id) {
         var item_count = document.getElementById("item-count").innerHTML;
         item_count++;
         document.getElementById("item-count").innerHTML = item_count;
-        orderedItems.push(click_id + item_count);
+        orderedItems.push(click_id);
         //orderedItemsConfirm.push(click_id);
 
         var orderName;
