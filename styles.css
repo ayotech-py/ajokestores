@@ -35,7 +35,7 @@ header .nav-items {
     padding-top: 2.5rem;
 }
 
-.nav-menu-list a, .mobile-menu-list a{
+.nav-menu-list a, .mobile-menu-list a {
     text-decoration: none;
     font-size: 0.75rem;
     letter-spacing: 2px;
@@ -430,6 +430,7 @@ footer {
     border-radius: 5px;
     border: none;
 }
+
 .delete-order {
     background-color: red;
     width: 4rem;
@@ -668,5 +669,9 @@ footer {
 
     .close, .open {
         display: flex;
+    }
+
+    .cart {
+        margin-left: 2rem;
     }
 }
