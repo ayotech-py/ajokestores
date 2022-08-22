@@ -371,18 +371,24 @@ footer {
     width: 40%;
 }
 
-.order-popup {
+.order-box {
     display: none;
+}
+
+.order-popup {
+    display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: rgb(218, 207, 207);
     border-radius: 25px;
-    width: 50%;
+    width: 60%;
     padding-right: 2rem;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    overflow-y: scroll !important;
+    max-height: 600px;
 }
 
 .list {
@@ -631,5 +637,33 @@ footer {
 
     .cart {
         margin-left: 2rem;
+    }
+    
+    .order-box {
+        display: none;
+    }
+
+    .order-popup {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        overflow-y: scroll !important;
+        max-height: 600px;
+    }
+    
+    .list {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .item-list {
+        width: 100%;
+    }
+    
+    .item-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
     }
 }
