@@ -177,7 +177,7 @@ function itemClick(click_id) {
         //creating count child
         const deleteBtn = document.createElement("button");
         deleteBtn.classList.add("delete-order");
-        deleteBtn.setAttribute("id", "delete" + item_count);
+        deleteBtn.setAttribute("id", "delete" + click_id[click_id.length - 1]);
         deleteBtn.setAttribute("onclick", "deleteFunction(this.id)");
         deletes.appendChild(deleteBtn);
         var deleteText = document.createTextNode("delete");
@@ -188,7 +188,6 @@ function itemClick(click_id) {
 document.getElementById("cart-button-close-img").onclick = function() {
     document.getElementById("order-popup-id").style.display = "none";
 }
-
 document.getElementById("cart-id").onclick = function() {
     document.getElementById("order-popup-id").style.display = "flex";
 }
