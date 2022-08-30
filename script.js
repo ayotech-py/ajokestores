@@ -22,60 +22,55 @@ var orderedItems = [];
 var itemOnstock = [
     {
         itemName: "Flowy Blouse",
-        itemPrice: "$29.99",
+        item_img: "./images/card1.png",
+        itemPrice: "$29",
         itemId: "item-01"
     },
     {
         itemName: "Casual Dress",
-        itemPrice: "$40.46",
+        item_img: "./images/card2.png",
+        itemPrice: "$40",
         itemId: "item-02"
     },
     {
         itemName: "Dark Jacket",
-        itemPrice: "$169.95",
+        item_img: "./images/card3.png",
+        itemPrice: "$169",
         itemId: "item-03"
     },
     {
         itemName: "Usher",
-        itemPrice: "$74.95",
+        item_img: "./images/card4.png",
+        itemPrice: "$74",
         itemId: "item-04"
     },
     {
         itemName: "Flowy Blouse",
-        itemPrice: "$29.99",
+        item_img: "./images/card1.png",
+        itemPrice: "$29",
         itemId: "item-05"
     },
     {
         itemName: "Casual Dress",
-        itemPrice: "$40.46",
+        item_img: "./images/card2.png",
+        itemPrice: "$40",
         itemId: "item-06"
     },
     {
         itemName: "Dark Jacket",
-        itemPrice: "$169.95",
+        item_img: "./images/card3.png",
+        itemPrice: "$169",
         itemId: "item-07"
     },
     {
         itemName: "Usher",
-        itemPrice: "$74.95",
+        item_img: "./images/card4.png",
+        itemPrice: "$74",
         itemId: "item-08"
     },
 ]
 
 const parentList = document.getElementById("unordered-id");
-/*
-var item = "item-022";
-var list_item = ["item-013", "item-024", "item-035"];
-for (var a = 0; a < list_item.length; a++) {
-    if (list_item[a].substring(0, 7) != item) {
-        continue;
-    } else if (list_item.includes()){
-        console.log(list_item[a].substring(0, 7));
-        console.log("false");
-    } else {
-        console.log(a);
-    }
-}*/
 
 function itemClick(click_id) {
     //orderbadge icon
@@ -97,6 +92,7 @@ function itemClick(click_id) {
             if (itemOnstock[a].itemId == click_id) {
                 orderName = itemOnstock[a].itemName;
                 orderPrice = itemOnstock[a].itemPrice;
+                orderImage = itemOnstock[a].item_img;
             }
         }
 
@@ -107,6 +103,8 @@ function itemClick(click_id) {
         parentList.appendChild(newList);
     
         //creating divs item-details and item-name
+
+        //creating the item name div
         const item_name = document.createElement("div");
         item_name.classList.add("item-name");
         const item_details = document.createElement("div");
@@ -115,15 +113,38 @@ function itemClick(click_id) {
         newList.appendChild(item_details);
     
         //creating p tag for the name of item
-        const p_tag_name = document.createElement("p");
+        const card_container = document.createElement("div");
+        card_container.classList.add("card-container");
+        item_name.appendChild(card_container);
+
+        //creating the item image div
+        const item_image_div = document.createElement("div");
+        item_image_div.classList.add("item-img-div");
+        const item_image = document.createElement("img");
+        item_image.classList.add("item-img");
+        item_image.src = orderImage;
+        card_container.appendChild(item_image_div)
+        item_image_div.appendChild(item_image)
+        const p_tag_name = document.createElement("h6");
         p_tag_name.classList.add("item-name-list");
-        item_name.appendChild(p_tag_name);
+
+        const text_div = document.createElement("div");
+        text_div.classList.add("text_div");
+        card_container.appendChild(text_div);
+        
+        text_div.appendChild(p_tag_name);
         var nameText = document.createTextNode(orderName);
         p_tag_name.appendChild(nameText);
+        const p_name = document.createElement("p");
+        p_name.classList.add("item-name");
+        var paragraph = document.createTextNode("Pretēji vispārpieņemtai pārliecībai, Lorem Ipsum nav teksts bez satura. Tā pirmsākums meklējams ")
+        text_div.appendChild(p_name);
+        p_name.appendChild(paragraph);
     
-        //creating divs for price and item comfirm
+        //creating divs for price
         const price = document.createElement("div");
         price.classList.add("price");
+        price.setAttribute("id", "priceId" + item_count)
         const item_comfirm = document.createElement("div");
         item_comfirm.classList.add("item-confirm");
         item_details.appendChild(price);
@@ -196,6 +217,8 @@ document.getElementById("cart-id").onclick = function() {
 function plusFunction(id) {
     var initialCount = document.getElementById("countId" + id[id.length - 1]).innerHTML;
     document.getElementById("countId" + id[id.length - 1]).innerHTML = parseInt(initialCount) + 1;
+    //var initialPrice = document.getElementById("priceId" + id[id.length - 1]).innerHTML;
+    //document.getElementById("priceId" + id[id.length - 1]).innerHTML = "$" + parseInt(initialPrice.substring(1, initialPrice.length)) * (parseInt(initialCount) + 1)
 }
 
 //Minus Order button Function
